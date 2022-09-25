@@ -1,0 +1,42 @@
+pipeline......"
+{
+agent any
+stages
+{
+ stage('Commit')
+ {
+  steps
+   {
+     echo "Source Code Download from GITHUB Repository to Declarative Pipeline.................."
+   }
+  }
+ stage('Build')
+ {
+  steps
+   {
+    echo "This is Build project run with Maven Tool.................."
+   }
+  }       
+  stage('Test')
+  {
+   steps
+    {
+     echo "This is Test project run with Selenium Tool................."
+    }
+   }      
+  stage('Deploy')
+  {
+   steps
+    {
+     echo "This is Deploy project run with Docker Tool................."
+    }
+   }   
+  stage('Monitor')
+  {
+   steps
+     {
+      echo "This is Monitoring platform run with Splunk Tool.............."
+     }
+    }   
+}
+}
