@@ -16,7 +16,14 @@ stages
    {
     echo "This is Build project run with Maven Tool.................."
    }
-  }       
+  } 
+  stage('QA_Test')
+  {
+   steps
+    {
+     echo "This is Test project run with SonarQube Tool................."
+    }
+   }      
   stage('Test')
   {
    steps
