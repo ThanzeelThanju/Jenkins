@@ -21,7 +21,7 @@ stages
   {
    steps
     {
-     echo "This is Test project run with SonarQube Tool................."
+     echo "This is Test project run with SonarQube Tool................"
     }
    }      
   stage('Test')
